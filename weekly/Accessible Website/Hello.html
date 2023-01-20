@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/Hello.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxo6idj.css">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <button class="btn" onclick="expandNav()">
+          Button
+        </button>
+      </div>
+
+    <div class="Hello">
+        <div class="menu">
+            <div class="menu-item"><a class="menu-link" href=""><span class="menu-icon"></span><span class="menu-text">A menu entry</span></a></div>
+            <div class="menu-item"><a class="menu-link" href=""><span class="menu-icon"></span><span class="menu-text">A very very very very long menu entry that is should be on two lines</span></a></div>
+            <div class="menu-item"><a class="menu-link" href=""><span class="menu-icon"></span><span class="menu-text">A quite long menu entry</span></a></div>
+            <div class="menu-item"><a class="menu-link" href=""><span class="menu-icon"></span><span class="menu-text">A menu entry that is a bit longer</span></a></div>
+        </div>
+    </div>
+
+    <footer>
+      <img src="images/Twitter-01.svg" alt="Twitter">
+      <img src="images/Facebook-01.svg" alt="Facebook">
+      <img src="images/Instagram-01.svg" alt="Instagram">
+      <img src="images/Pinterest-01.svg" alt="Pinterest">
+      <img src="images/Youtube-01.svg" alt="Youtube">
+      <small>©2022 National Gallery of Art</small>
+      <div id="Privacy">
+          <small>Notices</small>
+          <small>Terms of Use</small>
+          <small>Privacy Policy</small>
+      </div>
+  </footer>
+
+    <script>
+        function expandNav() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        
+
+</body>
+</html>
